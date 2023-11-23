@@ -1,7 +1,6 @@
 doctrine:
     dbal:
-        #url: '%env(resolve:DATABASE_URL)%'
-        #url: postgresql://siap:admin@10.168.241.29:5434/postgres
+       
         url: 'postgresql://%env(resolve:DB_USER)%:%env(resolve:DB_PASSWORD)%@%env(resolve:DB_HOST)%:%env(resolve:DB_PORT)%/%env(resolve:DB_NAME)%'
 
         # IMPORTANT: You MUST configure your server version,
